@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_backgrounds"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TableRow
+                android:id="@+id/cpuRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_CPU"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_CPUTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/click"
+                        android:text="CPU"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/textView_CPUPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 0000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/gpuRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_GPU"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_GPUTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/click"
+                        android:text="부품명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/textView_GPUPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ramRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_RAM"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_RAMTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_RAMPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/diskRow"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp">
+
+                <ImageView
+                    android:id="@+id/imageView_Disk"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_DiskTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_DiskPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/powerRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_Power"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_PowerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_PowerPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/mainBoardRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_MainBoard"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_MainBoardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_MainBoardPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/coolerRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_Cooler"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_CoolerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_CoolerPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/caseRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView_Case"
+                    android:layout_width="150dp"
+                    android:layout_height="144dp"
+                    app:srcCompat="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+                <LinearLayout
+                    android:layout_width="233dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_CaseTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:text="부품 명 : ??"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_CasePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="가격 : 00000원"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/shareRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <Button
+                    android:id="@+id/shareButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="공유하기"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="30sp"
+                    />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

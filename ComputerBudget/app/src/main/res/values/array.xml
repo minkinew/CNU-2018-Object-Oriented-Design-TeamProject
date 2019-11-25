@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order">
+        <item>간단한 사무용, 동영상 감상</item>
+        <item>가벼운 게임, 적당한 활용</item>
+        <item>고오급 게임, 그래픽 작업</item>
+        <item>그래픽 필요없음, 코딩용</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>50만원 미만</item>
+        <item>50만원 이상 100만원 미만</item>
+        <item>100만원 이상 150만원 미만</item>
+        <item>150만원 이상</item>
+    </string-array>
+
+</resources>
